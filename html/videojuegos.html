@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>BIOS GAMES</title>
+</head>
+<body>
+    <header>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="../images/1366_2000.jpeg" class="d-block w-100" alt="imgEldenRing">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../images/residnt.webp" class="d-block w-100" alt="imgre4">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/fc-24-scaled.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li>    
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="/html/videojuegos.html">Videojuegos</a>
+                </li>
+                <li>    
+                    <a href="/html/consolas_accesorios.html">Consolas y accesorios</a>
+                </li>
+                <li>    
+                    <a href="/html/preventa.html">Preventas</a>
+                </li>
+            </ul>
+            <form action="" method="get"></form>
+            <input type="text" placeholder="Producto">
+            <button type="submit">Buscar</button>
+            <div class="carrito"><img src="./images/carritocompras.png" alt="carrito" width="50px"></div>
+        </nav>
+    </header>
+    <div class="btnCarrito"><img src="../images/carritocompras.png" id="btnCarrito"  alt="carrito" width="50px"></div>
+    <h1>Videojuegos</h1>
+    <button id="agregar__producto" class="btn btn-success">Agregar</button>
+    <button id="btn__modificar" class="btn btn-primary">Modificar</button>
+    <div id="carrito" class="carrito">
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Costo por unidad</th>
+                    <th>Importe total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot id="totales"></tfoot>
+        </table>
+    </div> 
+    <div class="contenedor">
+        <div>
+            <img src="../images/fifa.jpg" alt="fifa23">
+            <div class="informacion">
+                <p>FIFA 23 PS5</p>
+                <p>Precio: $27.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/elden.jpg" alt="elden">
+            <div class="informacion">
+                <p>Elden Ring PS5</p>                   
+                <p>Precio: $35.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/granturismo.jpg" alt="granturismo">
+            <div class="informacion">
+                <p>Gran Turismo: 25 Anniversary PS5</p>                   
+                <p>Precio: $39.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/callof.jpg" alt="callofduty">
+            <div class="informacion">
+                <p>Call of Duty: Modern Warfare II PS5</p>                   
+                <p>Precio: 40.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/deadspce.jpg" alt="deadspace">
+            <div class="informacion">
+                <p>Dead Space: Remake PS5</p>                   
+                <p>Precio: $42.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/mortalkombat.jpg" alt="mortalkombat">
+            <div class="informacion">
+                <p>Mortal Kombat 11 PS5</p>                   
+                <p>Precio: $25.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/god.jpg" alt="godofwar">
+            <div class="informacion">
+                <p>God of War: Ragnarok PS5</p>                   
+                <p>Precio: $42.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/horizon.jpg" alt="horizon">
+            <div class="informacion">
+                <p>Horizon: Forbbiden West PS5</p>                   
+                <p>Precio: $30.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/uncharted.jpg" alt="uncharted">
+            <div class="informacion">
+                <p>Uncharted: Lost Legacy Coll PS5</p>                   
+                <p>Precio: $24.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/mjYRIXMlUSbjW0IaedN6X9Dm.webp" alt="diabloiv" width="300px">
+            <div class="informacion">
+                <p>DIABLO IV PS5</p>                   
+                <p>Precio: $45.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/thumb-388148.jpg" alt="hogwartslegacy" width="300px">
+            <div class="informacion">
+                <p>Uncharted: Lost Legacy Coll PS5</p>                   
+                <p>Precio: $45.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/forbiddenwest-1648659613888.jpg" alt="horizonfw" width="300px">
+            <div class="informacion">
+                <p>Horizon: Forbbiden West PS5</p>                   
+                <p>Precio: $30.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/resident-evil-4-remake.webp" alt="imgre4" width="500px">
+            <div class="informacion">
+                <p>Resident Evil 4: Remake PS5</p>                   
+                <p>Precio: $42.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <footer>BIOS GAMES 2023 - Derechos reservados.</footer>
+    </div>
+    <script type="module" src="../db/productos.js"></script>
+    <script type="module" src="../db/usuarios.js"></script>
+    <script type="module" src="../js/usuario.js"></script>
+    <script type="module" src="../js/inicio.js"></script>
+    <script type="module" src="../js/admin.js"></script>
+    <script type="module" src="../js/carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

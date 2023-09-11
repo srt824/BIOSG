@@ -1,0 +1,16 @@
+
+
+[
+    {"id":70, "imagen": "https://dixgamer.com/wp-content/uploads/2023/07/EA-SPORTS-FC%E2%84%A2-24-Standard-Edition-PS5.jpg", "nombre":"EA FC 24", "precio": 65000, "stock": 15, "plataforma": "PS5"},
+    {"id":71, "imagen": "https://acdn.mitiendanube.com/stores/455/350/products/tapas-web-ps5-cyber-punk-2077-phantom-liberty1-47cacf7988f96c891a16885909130457-480-0.jpg", "nombre":"CYBERPUNK PHANTOM LIBERTY", "precio": 60000, "stock": 15, "plataforma": "PS5"},
+    {"id":72, "imagen": "https://spacenetgameshop.net/image/cache/data/001%20PS5%20Cover/alone-in-the-dark-deluxe-edition-ps5-cena-546x840.jpg", "nombre":"ALONE IN THE DARK", "precio": 59000, "stock": 15, "plataforma": "PS5"},
+    {"id":73, "imagen": "https://spacegamer.com.ar/img/Public/1058-producto-1-9413.jpg", "nombre":"MORTAL KOMBAT 1", "precio": 70000, "stock": 15, "plataforma": "PS5"},
+    {"id":74, "imagen": "https://elevengamesar.com/img/Public/1131-producto-diseno-sin-titulo-22-2842.jpg", "nombre":"ALAN WAKE II", "precio": 65000, "stock": 15, "plataforma": "PS5"},
+    {"id":75, "imagen": "https://m.media-amazon.com/images/I/71dd4-RlmLL._AC_UF1000,1000_QL80_.jpg", "nombre":"RIDE 5", "precio": 60000, "stock": 15, "plataforma": "PS5"},
+    {"id":76, "imagen": "https://gorilagames.com/img/Public/1019-producto-spiderman-2-ps5-1962.jpg", "nombre":"SPIDERMAN 2", "precio": 70000, "stock": 15, "plataforma": "PS5"},
+    {"id":77, "imagen": "https://gorilagames.com/img/Public/1019-producto-assassins-creed-mirage-1-9685.jpg", "nombre":"AC MIRAGE", "precio": 65000, "stock": 15, "plataforma": "PS5"},
+    {"id":78, "imagen": "https://m.media-amazon.com/images/I/81gB0fpm74L.jpg", "nombre":"CITIES SKYLINE II", "precio": 50000, "stock": 15, "plataforma": "PS5"},
+    {"id":79, "imagen": "https://m.media-amazon.com/images/I/81bCXwcWG7L._AC_UF1000,1000_QL80_.jpg", "nombre":"PAYDAY 3", "precio": 59000, "stock": 15, "plataforma": "PS5"},
+    {"id":80, "imagen": "https://s.pacn.ws/1/p/14q/tekken-8-733031.6.jpg?v=rqgs82&quality=72&width=1024&crop=798,1022", "nombre":"TEKKEN 8", "precio": 65000, "stock": 15, "plataforma": "PS5"}
+
+]

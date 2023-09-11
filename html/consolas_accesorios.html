@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>BIOS GAMES</title>
+</head>
+<body>
+    <header>
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/1366_2000.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/residnt.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/fc-24-scaled.webp" class="d-block w-100" alt="...">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li>    
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="/html/videojuegos.html">Videojuegos</a>
+                </li>
+                <li>    
+                    <a href="/html/consolas_accesorios.html">consolas y accesorios</a>
+                </li>
+                <li>    
+                    <a href="/html/preventa.html">Preventas</a>  
+                </li>
+            </ul>
+            <form action="" method="get"></form>
+            <input type="text" placeholder="Producto">
+            <button type="submit">Buscar</button>
+            <div class="carrito"><img src="./images/carritocompras.png" alt="carrito" width="50px"></div>
+        </nav>
+    </header>
+    <div class="btnCarrito"><img src="../images/carritocompras.png" id="btnCarrito"  alt="carrito" width="50px"></div>
+    <h1>Consolas y accesorios</h1>
+    <button id="agregar__producto" class="btn btn-success">Agregar</button>
+    <button id="btn__modificar" class="btn btn-primary">Modificar</button>
+    <div id="form__agregar"></div>
+    <div id="productosDestacados"></div>
+    <div id="carrito" class="carrito">
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Costo por unidad</th>
+                    <th>Importe total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot id="totales"></tfoot>
+        </table>
+    </div>
+    <div id="contenedor" class="contenedor">
+        <div>
+            <img src="../images/D_NQ_NP_988724-MLA44250626294_122020-O.webp" alt="ps5">
+            <div class="informacion">
+                <p>Consola ps5</p>
+                <p>Precio: $620.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/51+AvgQs50L._SL1500_.jpg" alt="ps4" width="600px">
+            <div class="informacion">
+                <p>Consola PS4 PRO</p>                   
+                <p>Precio: $460.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/115464-switch-oled-red-blue-box-art-1200x675.webp" alt="switcholed" width="600px">
+            <div class="informacion">
+                <p>Nintendo Switch Oled</p>                   
+                <p>Precio: $400.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/xbox-series-x-2063609.webp" alt="xboxx" width="600px">
+            <div class="informacion">
+                <p>XBOX SERIES X</p>                   
+                <p>Precio: $600.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/D_NQ_NP_769606-MLA54103012487_032023-O.webp" alt="xboxs">
+            <div class="informacion">
+                <p>XBOX SERIES S</p>                   
+                <p>Precio: $500.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <footer>BIOS GAMES 2023 - Derechos reservados.</footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script type="module" src="../db/productos.js"></script>
+    <script type="module" src="../db/usuarios.js"></script>
+    <script type="module" src="../js/usuario.js"></script>
+    <script type="module" src="../js/inicio.js"></script>
+    <script type="module" src="../js/admin.js"></script>
+    <script type="module" src="../js/carrito.js"></script>
+</body>
+</html>

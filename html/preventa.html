@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>BIOS GAMES</title>
+</head>
+<body>
+    <header>
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/1366_2000.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/residnt.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/fc-24-scaled.webp" class="d-block w-100" alt="...">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li>    
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./videojuegos.html">Videojuegos</a>
+                </li>
+                <li>    
+                    <a href="./consolas_accesorios.html">Consolas y accesorios</a>
+                </li>
+                <li>    
+                    <a href="./preventa.html">Preventas</a>  
+                </li>
+            </ul>
+            <div class="form">
+                <form action="" method="get"></form>
+                <input type="text" placeholder="Buscar producto" id="filter__input">
+                <button type="submit">Buscar</button>
+            </div>
+        </nav>
+    </header>
+    <div class="btnCarrito"><img src="../images/carritocompras.png" id="btnCarrito"  alt="carrito" width="50px"></div>
+    <h1>Preventas</h1>
+    <div id="preventasDestacadas">
+    </div>
+    <div id="carrito" class="carrito">
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Costo por unidad</th>
+                    <th>Importe total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot id="totales"></tfoot>
+        </table>
+    </div> 
+    
+    <script type="module" src="../db/productos.js"></script>
+    <script type="module" src="../db/usuarios.js"></script>
+    <script type="module" src="../js/usuario.js"></script>
+    <script type="module" src="../js/inicio.js"></script>
+    <script type="module" src="../js/admin.js"></script>
+    <script type="module" src="../js/carrito.js"></script>
+    <script type="module" src="../js/preventa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>

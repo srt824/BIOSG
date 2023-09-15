@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded" , () => {
         close.id = "cerrar__sesion"
         close.innerHTML = "cerrar sesion"
         close.addEventListener("click", () => {
-            alert(`Gracias por comprar en nuestra tienda ${usuarioLogeado.user}. Usuario deslogeado.`)
+            Swal.fire(`Gracias por comprar en nuestra tienda ${usuarioLogeado.user}. Usuario deslogeado.`)
             
             sessionStorage.removeItem("usuario")
             location.reload()
@@ -58,7 +58,7 @@ export const generarCardsProductos = (productosDestacados) => {
                 <h5 class="card-title">${nombre}</h5>
                 <p class="card-text">${plataforma}</p>
                 <p class="card-text">$${precio}</p>
-                <button id="comprar${id}" class="btn btn-primary">Comprar</button>
+                <button id="comprar${id}" class="btn btn-primary">Agregar al carrito</button>
 
                 ${
                     usuarioLogeado?.admin === true ? `<button id="eliminar${id}" class="btn btn-danger">Eliminar</button>` : ""

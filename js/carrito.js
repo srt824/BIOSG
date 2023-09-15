@@ -122,7 +122,7 @@ export const comprarProducto = (idProducto) => {
     Swal.fire({
         position: 'top-end',
         icon: 'success',
-        title: `Usted compró el producto ${producto.nombre}`,
+        title: `Usted agregó el producto ${producto.nombre} al carrito`,
         showConfirmButton: false,
         timer: 2500
     })
@@ -178,6 +178,10 @@ const dibujarFooter = () => {
         <td>${generarTotales().cantidadTotal}</td>
         <td></td>
         <td>${generarTotales().costoTotal}</td>
+        
+        <button class="btn btn-primary">Comprar</button>
+        <td></td>
+        <button class="btn btn-danger">Cancelar</button>
         `
 
         footCarrito.append(footer)

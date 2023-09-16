@@ -1,8 +1,8 @@
 
 
-const lista = document.getElementById("preventasDestacadas");
+const lista = document.getElementById("todosLosProductos");
 
-fetch('/data.json')
+fetch('/productos.json')
     .then((res) => res.json())
     .then((data) => {
         data.forEach((producto) => {
@@ -27,7 +27,3 @@ fetch('/data.json')
 
         });
     })
-
-    
-    
-    

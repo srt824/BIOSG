@@ -1,8 +1,12 @@
 
+//import { comprarProducto } from "./carrito.js";
 
-const lista = document.getElementById("preventasDestacadas");
 
-fetch('/data.json')
+
+const btnCarritoConsola = document.getElementById("btnCarritoConsola");
+const lista = document.getElementById("consolas__accesorios");
+
+fetch('/consolas.json')
     .then((res) => res.json())
     .then((data) => {
         data.forEach((producto) => {
@@ -15,19 +19,15 @@ fetch('/data.json')
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text">${producto.plataforma}</p>
                 <p class="card-text">$${producto.precio}</p>
-                <button id="reservar${producto.id}" class="btn btn-primary">Reservar</button>
+                <button id="comprar${producto.id}" class="btn btn-primary">Comprar</button>
             </div>
         </div>
         `;
 
         lista.append(card);
 
-        const btnReservar = document.getElementById(`reservar${producto.id}`)
-        btnReservar.addEventListener("click", () => comprarProducto(producto.id))
+        const comprarBtn = document.getElementById(`comprar${producto.id}`)
+        comprarBtn.addEventListener("click", () => comprarProducto(producto.id))
 
         });
     })
-
-    
-    
-    

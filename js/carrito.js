@@ -129,7 +129,7 @@ export const comprarProducto = (idProducto) => {
 
 }
 
-const dibujarCarrito = () => {
+export const dibujarCarrito = () => {
     listaCarrito.innerHTML = ''
     
     carrito.forEach(producto => {

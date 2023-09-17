@@ -15,47 +15,6 @@ h1 {
     padding: 20px;
 }
 
-.contenedor{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.informacion{
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap:15px;
-    font-size: 25px;
-    font-weight: 300px;
-}
-
-
-.informacion .precio {
-    font-size: 20px;
-    font-weight: 500px;
-}
-
-.informacion .precio span{
-    font-size: 17px;
-    font-weight: 300;
-}
-
-.informacion button{
-    background-color: #c1b1b1;
-    width: 100px;
-    height: 35px;
-    border-radius: 10px;
-    border: none;
-    font-size: 17px;
-    font-weight: 300;
-}
-
 /*nav*/
 
 nav{
@@ -87,8 +46,6 @@ nav ul li a:hover{
     background-color: rgb(16, 128, 226);
 }
 
-
-
 /*Preventas*/
 
 #preventasDestacadas{
@@ -99,7 +56,7 @@ nav ul li a:hover{
     
 }
 
-/* carrousel */
+/* carousel */
 
 .carousel-item img {
     width: 80%;
@@ -111,6 +68,7 @@ nav ul li a:hover{
 
 #footer {
     text-align: center;
+    padding: 40px;
 }
 
 
@@ -151,17 +109,14 @@ nav ul li a:hover{
     justify-content: end;
 }
 
+/* inicio*/
+
 #productosDestacados{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-left: 20px;
+    margin-left: 30px;
     
-}
-
-
-#agregar__producto{
-    display: none;
 }
 
 
@@ -170,6 +125,8 @@ nav ul li a:hover{
 #consolas__accesorios{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 30px;
+    gap: 10px;
 }
 
 /*todos los productos*/
@@ -177,9 +134,19 @@ nav ul li a:hover{
 #todosLosProductos{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 50px;
+    margin-left: 30px;
+    gap: 10px;
 }
+
+
 
 body {
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
+
+#agregar__producto{
+    display: none;
+}
+
+
+

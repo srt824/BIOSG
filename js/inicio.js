@@ -5,9 +5,8 @@ import { comprarProducto } from "./carrito.js";
 const userLogin = document.getElementById("userLogin")
 const divProductos = document.getElementById("productosDestacados");
 const filterInput = document.getElementById("filter__input")
-const filterLista = document.getElementById("filter__lista")
-const filterNombre = document.getElementById("filter__nombre")
-const filterPrecio = document.getElementById("filter__precio")
+
+
 
 localStorage.setItem("productos", JSON.stringify(productosDestacados));
 export let productosDisponibles = JSON.parse(localStorage.getItem("productosDestacados"));
@@ -58,7 +57,7 @@ export const generarCardsProductos = (productosDestacados) => {
                 <h5 class="card-title">${nombre}</h5>
                 <p class="card-text">${plataforma}</p>
                 <p class="card-text">$${precio}</p>
-                <button id="comprar${id}" class="btn btn-primary">Agregar al carrito</button>
+                <button id="comprar${id}" class="btn btn-primary">comprar</button>
 
                 ${
                     usuarioLogeado?.admin === true ? `<button id="eliminar${id}" class="btn btn-danger">Eliminar</button>` : ""
@@ -82,7 +81,7 @@ export const generarCardsProductos = (productosDestacados) => {
 };
 
 
-//filtro por input
+//filtro 
 
 filterInput.addEventListener("keyup", (e) => {
     const productosFilter = productosDisponibles.filter((producto) => producto.nombre.toLowerCase().includes(e.target.value))
@@ -98,72 +97,6 @@ filterInput.addEventListener("keyup", (e) => {
 })
 
 
-//filtro por categoria
-
-filterLista.addEventListener("click", (e) => {
-    const productosFilter = productosDisponibles.filter((producto) => producto.plataforma.toLowerCase().includes(e.target.innerHTML.toLowerCase()))
-    
-    productosDisponibles = productosFilter
-
-    if(e.target.innerHTML !== "Todos"){
-        generarCardsProductos(productosFilter)
-    }else{
-        productosDisponibles = JSON.parse(localStorage.getItem("productosDestacados"))
-        generarCardsProductos(productosDisponibles)
-    }
-})
-
-
-//filtro por nombre
-
-filterNombre.addEventListener("click", (e) => {
-    filtrarPorNombre(e.target.innerHTML)
-})
-
-const filtrarPorNombre = (orden) => {
-    let productos
-
-    if(orden === "Ascendente") {
-        productos = productosDisponibles.sort((a, b) => {
-            if(a.name.toLowerCase() > b.nombre.toLowerCase()) {
-                return 1
-            }else if (a.name.toLowerCase < b.nombre.toLowerCase()) {
-                return -1
-            }else {
-                return 0
-            }
-        })
-    }else if (orden === "Descendente") {
-        productos = productosDisponibles.sort((a, b) => {
-            if(a.name.toLowerCase() < b.nombre.toLowerCase()) {
-                return 1
-            }else if (a.name.toLowerCase > b.nombre.toLowerCase()) {
-                return -1
-            }else {
-                return 0
-            }
-        })
-    }
-
-    generarCardsProductos(productos)
-}
-
-
-//filtro por precio
-
-filterPrecio.addEventListener("click", (e) => {
-    const orden = e.target.innerHTML
-    let productos
-
-    if(orden === "Ascendente") {
-        productos = productosDisponibles.sort((a, b) => a.precio - b.precio)
-    }else if (orden === "Descendente") {
-        productos = productosDisponibles.sort((a, b) => b.precio - a.precio)
-    }
-
-    generarCardsProductos(productos)
-
-})
-    
+  
 
     

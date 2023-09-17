@@ -1,7 +1,4 @@
 
-//import { comprarProducto } from "./carrito.js";
-
-
 
 const btnCarritoConsola = document.getElementById("btnCarritoConsola");
 const lista = document.getElementById("consolas__accesorios");

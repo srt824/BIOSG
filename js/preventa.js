@@ -1,6 +1,12 @@
 
 
+
 const lista = document.getElementById("preventasDestacadas");
+
+
+localStorage.setItem("productos", JSON.stringify(preventasDestacadas));
+
+
 
 fetch('/data.json')
     .then((res) => res.json())
@@ -15,19 +21,14 @@ fetch('/data.json')
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text">${producto.plataforma}</p>
                 <p class="card-text">$${producto.precio}</p>
-                <button id="reservar${producto.id}" class="btn btn-primary">Reservar</button>
+                <button id="comprar${producto.id}" class="btn btn-primary">Reservar</button>
             </div>
         </div>
         `;
 
         lista.append(card);
 
-        const btnReservar = document.getElementById(`reservar${producto.id}`)
-        btnReservar.addEventListener("click", () => comprarProducto(producto.id))
-
+        
         });
+        
     })
-
-    
-    
-    

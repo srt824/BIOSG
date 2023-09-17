@@ -15,15 +15,16 @@ fetch('/productos.json')
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text">${producto.plataforma}</p>
                 <p class="card-text">$${producto.precio}</p>
-                <button id="reservar${producto.id}" class="btn btn-primary">Reservar</button>
+                <button id="comprar${producto.id}" class="btn btn-primary">comprar</button>
             </div>
         </div>
         `;
 
         lista.append(card);
 
-        const btnReservar = document.getElementById(`reservar${producto.id}`)
+        const btnReservar = document.getElementById(`comprar${producto.id}`)
         btnReservar.addEventListener("click", () => comprarProducto(producto.id))
 
         });
     })
+

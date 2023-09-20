@@ -2,9 +2,9 @@ import { eliminarProducto } from "./admin.js";
 import { comprarProducto } from "./carrito.js";
 
 
-const userLogin = document.getElementById("userLogin")
+const userLogin = document.getElementById("userLogin");
 const divProductos = document.getElementById("productosDestacados");
-const filterInput = document.getElementById("filter__input")
+const filterInput = document.getElementById("filter__input");
 
 
 
